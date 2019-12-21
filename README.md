@@ -1,16 +1,17 @@
-# navigator_demo
+# flutter_sub_navigator_example
 
-A new Flutter project.
+一个二级路由的示例, 主要是学习和以后在某些特定应用场景时使用
 
-## Getting Started
+代码没有太大的难度, 就是对安卓中物理返回键会一次推出所有二级路由栈的问题进行了解决
 
-This project is a starting point for a Flutter application.
+## 应用场景
 
-A few resources to get you started if this is your first Flutter project:
+比如图片选择器组件(没错, 我说的就是我自己写的 photo 组件)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+选择器会有衍生的二级页面, 甚至三级页面, 但是需要单独封装成组件以便于外部调用
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+而选择的图片信息需要在某次会话中全局使用, 但又不需要保存, 这时就可以用这个方案
+
+还有主题信息, 必须颜色, 字号信息, 需要传入, 但每个组件分区传入很麻烦, 这时就可以用这种方案
+
+以上
