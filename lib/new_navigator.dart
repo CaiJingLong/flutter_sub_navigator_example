@@ -82,6 +82,13 @@ class _Page2State extends State<Page2> {
       appBar: AppBar(
         title: Text("2"),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Scaffold.of(context).showSnackBar(SnackBar(
+            content: Text("2"),
+          ));
+        },
+      ),
     );
   }
 }
